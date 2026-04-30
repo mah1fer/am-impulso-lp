@@ -1,59 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM Impulso | Tráfego Pago & IA</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background-color: #000000; color: #ffffff; }
-        .text-gradient {
-            background: linear-gradient(to right, #FF007F, #8A2BE2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-gradient {
-            background: linear-gradient(to right, #FF007F, #8A2BE2);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM Impulso | Tráfego Pago & IA para Escalar seu Negócio</title>
+  <meta name="description" content="Escalamos seu negócio com Agentes de IA e Tráfego Pago. Google Ads, Meta Ads, automações inteligentes e landing pages de alta conversão." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="font-sans antialiased">
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <div class="text-2xl font-bold tracking-tighter">AM <span class="text-gradient">IMPULSO</span></div>
-        <a href="#contato" class="bg-gradient px-6 py-2 rounded-full font-medium hover:opacity-90 transition">Falar Conosco</a>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">AM<span>Impulso</span></a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#faq">FAQ</a>
     </nav>
+    <a href="#contato" class="btn btn-primary nav-cta">Falar com Especialista</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
 
-    <header class="py-24 px-6 text-center max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Escalamos seu negócio com <span class="text-gradient">IA e Tráfego Pago</span>.</h1>
-        <p class="text-gray-400 text-xl mb-10">Automações inteligentes, Landing Pages de alta conversão e gestão de anúncios estratégica.</p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#servicos" class="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-200 transition">Nossos Serviços</a>
-            <a href="#contato" class="border border-gray-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-900 transition">Começar Agora</a>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-badge">🚀 +2.350 conversões geradas este mês</div>
+    <h1 class="hero-title">Transforme conversas em <span class="gradient-text">faturamento real.</span></h1>
+    <p class="hero-sub">Agentes de IA no WhatsApp da sua empresa. 24/7, escala infinita, zero encargos trabalhistas. Tráfego pago que converte de verdade.</p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn btn-primary btn-lg">Começar Agora →</a>
+      <a href="#resultados" class="btn btn-ghost btn-lg">Ver Resultados</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-value">R$ 45.750</span><span class="stat-label">Valor Recuperado</span></div>
+      <div class="stat"><span class="stat-value">95%</span><span class="stat-label">Satisfação</span></div>
+      <div class="stat"><span class="stat-value">-60%</span><span class="stat-label">Custo Operacional</span></div>
+      <div class="stat"><span class="stat-value">24/7</span><span class="stat-label">Disponibilidade</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="container">
+    <p class="trust-label">Integramos com as principais plataformas</p>
+    <div class="trust-logos">
+      <span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>WhatsApp Business</span><span>RD Station</span><span>HubSpot</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="section-header">
+      <h2>Tudo que você precisa para <span class="gradient-text">escalar</span></h2>
+      <p>Três frentes de crescimento acelerado, integradas e orientadas por dados.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-aos>
+        <div class="service-icon">📈</div>
+        <h3>Tráfego Pago</h3>
+        <p>Google Ads, Meta Ads e TikTok Ads focados em ROI real e escala acelerada. Sem desperdício, só resultado.</p>
+        <ul class="service-list">
+          <li>Criação e otimização de campanhas</li>
+          <li>Segmentação avançada de público</li>
+          <li>Relatórios de ROI em tempo real</li>
+          <li>A/B test de criativos</li>
+        </ul>
+        <div class="service-metric">Média de <strong>3.2x ROAS</strong> nos primeiros 90 dias</div>
+      </div>
+      <div class="service-card card-featured" data-aos>
+        <div class="card-badge">Mais Popular</div>
+        <div class="service-icon">🤖</div>
+        <h3>Automação IA</h3>
+        <p>Agentes inteligentes que vendem, suportam e recuperam clientes no WhatsApp — sem parar, sem reclamar.</p>
+        <ul class="service-list">
+          <li>Agentes de IA no WhatsApp 24/7</li>
+          <li>Automação de funil de vendas</li>
+          <li>Recuperação de carrinho abandonado</li>
+          <li>Suporte automatizado com IA</li>
+        </ul>
+        <div class="service-metric">Empresas reduzem <strong>60% do custo</strong> operacional</div>
+      </div>
+      <div class="service-card" data-aos>
+        <div class="service-icon">⚡</div>
+        <h3>Landing Pages</h3>
+        <p>Páginas ultra-velozes desenhadas para transformar visitantes em clientes. Design + copy + conversão.</p>
+        <ul class="service-list">
+          <li>Design focado em conversão</li>
+          <li>Copy persuasivo por especialistas</li>
+          <li>Velocidade 95+ no PageSpeed</li>
+          <li>Integração com CRM e Ads</li>
+        </ul>
+        <div class="service-metric">Taxa de conversão média <strong>3x maior</strong> que o mercado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section class="results" id="resultados">
+  <div class="container">
+    <div class="section-header">
+      <h2>Resultados <span class="gradient-text">em tempo real</span></h2>
+      <p>Dashboards reais de empresas que já automatizaram com IA.</p>
+    </div>
+    <div class="dashboard-card">
+      <div class="dashboard-header">
+        <span class="dashboard-dot green"></span>
+        <span class="dashboard-dot yellow"></span>
+        <span class="dashboard-dot red"></span>
+        <span class="dashboard-title">Dashboard AM Impulso — Visão Geral</span>
+      </div>
+      <div class="dashboard-metrics">
+        <div class="metric-box">
+          <span class="metric-label">Receita Total</span>
+          <span class="metric-value green">R$ 15.231</span>
+          <span class="metric-change">↑ 28% vs mês anterior</span>
         </div>
-    </header>
-
-    <section id="servicos" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800">
-                <div class="w-12 h-12 bg-gradient rounded-lg mb-6 flex items-center justify-center font-bold text-xl">1</div>
-                <h3 class="text-2xl font-bold mb-4">Tráfego Pago</h3>
-                <p class="text-gray-400">Google Ads, Meta Ads e TikTok Ads focados em ROI real e escala acelerada.</p>
-            </div>
-            <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800">
-                <div class="w-12 h-12 bg-gradient rounded-lg mb-6 flex items-center justify-center font-bold text-xl">2</div>
-                <h3 class="text-2xl font-bold mb-4">Automação IA</h3>
-                <p class="text-gray-400">Implementação de agentes e fluxos inteligentes para otimizar suas vendas e suporte.</p>
-            </div>
-            <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800">
-                <div class="w-12 h-12 bg-gradient rounded-lg mb-6 flex items-center justify-center font-bold text-xl">3</div>
-                <h3 class="text-2xl font-bold mb-4">Landing Pages</h3>
-                <p class="text-gray-400">Páginas ultra-velozes desenhadas para transformar visitantes em clientes.</p>
-            </div>
+        <div class="metric-box">
+          <span class="metric-label">Conversões</span>
+          <span class="metric-value">+2.350</span>
+          <span class="metric-change">↑ 41% vs mês anterior</span>
         </div>
-    </section>
+        <div class="metric-box">
+          <span class="metric-label">Tickets Resolvidos</span>
+          <span class="metric-value">1.847</span>
+          <span class="metric-change">pela IA, sem humano</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-label">Satisfação</span>
+          <span class="metric-value green">95%</span>
+          <span class="metric-change">NPS de 78 pontos</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-label">Valor Recuperado</span>
+          <span class="metric-value green">R$ 45.750</span>
+          <span class="metric-change">cobranças automatizadas</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-label">Custo Cobrança</span>
+          <span class="metric-value">-60%</span>
+          <span class="metric-change">vs operação manual</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer class="py-12 border-t border-zinc-900 text-center text-gray-500">
-        <p>&copy; 2026 AM Impulso. Todos os direitos reservados.</p>
-    </footer>
+<!-- COMO FUNCIONA -->
+<section class="how" id="como-funciona">
+  <div class="container">
+    <div class="section-header">
+      <h2>Como <span class="gradient-text">funciona</span></h2>
+      <p>Do primeiro contato ao resultado em 3 passos simples.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-aos>
+        <div class="step-number">01</div>
+        <h3>Diagnóstico Gratuito</h3>
+        <p>Analisamos seu negócio, funil atual e onde estão as maiores oportunidades de crescimento.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-aos>
+        <div class="step-number">02</div>
+        <h3>Estratégia Personalizada</h3>
+        <p>Montamos um plano sob medida combinando tráfego pago, IA e páginas de conversão.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-aos>
+        <div class="step-number">03</div>
+        <h3>Escala com Resultado</h3>
+        <p>Implantamos, otimizamos e escalamos continuamente. Você foca no produto, nós no crescimento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>O que nossos clientes <span class="gradient-text">dizem</span></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card" data-aos>
+        <div class="stars">★★★★★</div>
+        <p>"Em 60 dias o agente de IA já atendia 80% dos clientes sozinho. Nosso time de suporte diminuiu pela metade e a satisfação subiu para 95%."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MC</div>
+          <div><strong>Marcos Costa</strong><br><span>CEO, e-commerce de moda — São Paulo</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-aos>
+        <div class="stars">★★★★★</div>
+        <p>"O ROI das campanhas triplicou no terceiro mês. A AM Impulso não entrega só tráfego — entrega resultado de verdade com dados transparentes."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AL</div>
+          <div><strong>Ana Luz</strong><br><span>Diretora de Marketing, SaaS B2B — Curitiba</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-aos>
+        <div class="stars">★★★★★</div>
+        <p>"A landing page nova converteu 3.1x mais que a anterior desde o primeiro dia. O copy e o design são de outro nível."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RF</div>
+          <div><strong>Rafael Fonseca</strong><br><span>Fundador, Escola Online — Rio de Janeiro</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contato">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Pronto para <span class="gradient-text">escalar</span> seu negócio?</h2>
+      <p>Diagnóstico gratuito de 30 minutos. Sem compromisso, sem enrolação.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/5500000000000?text=Quero%20um%20diagn%C3%B3stico%20gratuito" target="_blank" class="btn btn-primary btn-xl">Quero meu Diagnóstico Gratuito →</a>
+      </div>
+      <p class="cta-reassurance">✓ Resposta em até 2 horas &nbsp;·&nbsp; ✓ Sem compromisso &nbsp;·&nbsp; ✓ 100% gratuito</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <h2>Perguntas <span class="gradient-text">frequentes</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Em quanto tempo vejo resultados?</button>
+        <div class="faq-answer"><p>Tráfego pago: primeiros resultados em 7–14 dias. Automação IA: agente funcionando em 15–30 dias. Landing page: conversões desde o primeiro dia no ar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Preciso ter experiência com IA ou anúncios?</button>
+        <div class="faq-answer"><p>Não. Cuidamos de toda a parte técnica. Você só precisa nos contar sobre o seu negócio e acompanhar os resultados no dashboard.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">O agente de IA substitui minha equipe?</button>
+        <div class="faq-answer"><p>O agente automatiza as tarefas repetitivas (atendimento, qualificação, cobrança), liberando sua equipe para trabalhos de maior valor. É uma extensão, não uma substituição.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Quais plataformas de anúncio vocês gerenciam?</button>
+        <div class="faq-answer"><p>Google Ads, Meta Ads (Facebook e Instagram), TikTok Ads e YouTube Ads. Sempre com foco em ROI e escala sustentável.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Como funciona o contrato?</button>
+        <div class="faq-answer"><p>Contratos mensais sem multa de fidelidade. Acreditamos em resultados, não em presos contratualmente. Se não entregar, você pode cancelar.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">AM<span>Impulso</span></a>
+      <p>Escalamos seu negócio com IA e Tráfego Pago.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2026 AM Impulso. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5500000000000?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20serviços%20da%20AM%20Impulso" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="main.js"></script>
 </body>
 </html>
