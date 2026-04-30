@@ -1,11 +1,15 @@
 // FAQ Accordion
-document.querySelectorAll('.faq-question').forEach(btn => {
+document.querySelectorAll('.accordion-trigger').forEach(btn => {
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
-    document.querySelectorAll('.faq-question').forEach(b => {
+    
+    // Close all other accordions
+    document.querySelectorAll('.accordion-trigger').forEach(b => {
       b.setAttribute('aria-expanded', 'false');
       b.nextElementSibling.classList.remove('open');
     });
+    
+    // Open the clicked one if it was closed
     if (!expanded) {
       btn.setAttribute('aria-expanded', 'true');
       btn.nextElementSibling.classList.add('open');
@@ -21,8 +25,13 @@ document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
 
 // Nav scroll effect
 window.addEventListener('scroll', () => {
-  document.querySelector('.nav').style.boxShadow =
-    window.scrollY > 10 ? '0 4px 32px rgba(0,0,0,0.4)' : 'none';
+  const nav = document.querySelector('.nav');
+  if (window.scrollY > 10) {
+    nav.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+    nav.style.borderBottom = '1px solid var(--border)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
 });
 
 // Smooth anchor scroll
@@ -33,12 +42,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Mobile menu toggle (simple show/hide)
+// Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
 if (menuToggle) {
   menuToggle.addEventListener('click', () => {
     const links = document.querySelector('.nav-links');
     const isOpen = links.style.display === 'flex';
-    links.style.cssText = isOpen ? '' : 'display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:rgba(5,5,8,0.98);padding:24px;gap:16px;border-bottom:1px solid rgba(255,255,255,0.08);z-index:99';
+    if (isOpen) {
+      links.style.display = '';
+    } else {
+      links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:4rem;left:0;right:0;background:var(--background);padding:1.5rem;gap:1rem;border-bottom:1px solid var(--border);z-index:99;box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+    }
   });
 }
